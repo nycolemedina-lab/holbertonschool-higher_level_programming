@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-if __name == "__main__":
+if __name__ == "__main__":
     for i in range(len(argv)):
         if len(argv) == 1:
             print("{} argument".format(i))
