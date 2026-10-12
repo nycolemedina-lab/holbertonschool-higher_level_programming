@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-from calculator_1 import add, sub, mul, div
+import calculator_1
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
@@ -16,12 +16,12 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
 
     if op == "+":
-        res = add(a, b)
+        res = calculator_1.add(a, b)
     elif op == "-":
-        res = sub(a, b)
+        res = calculator_1.sub(a, b)
     elif op == "*":
-        res = mul(a, b)
+        res = calculator_1.mul(a, b)
     else:
-        res = div(a, b)
+        res = calculator_1.div(a, b)
 
     print("{} {} {} = {}".format(a, op, b, res))
