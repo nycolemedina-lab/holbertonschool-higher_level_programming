@@ -18,8 +18,8 @@ Passing direct string literals:
 
 Default last_name (defaults to empty string ""):
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
 
 Testing with explicit empty last name:
     >>> say_my_name("Anna", "")
-    My name is Anna
+    My name is Anna 
