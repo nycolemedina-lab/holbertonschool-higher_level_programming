@@ -18,4 +18,4 @@ Passing direct string literals:
 
 Default last_name (defaults to empty string ""):
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
