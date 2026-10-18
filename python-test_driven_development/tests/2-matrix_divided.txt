@@ -1,4 +1,6 @@
+===========================================
 Unit Tests for 2-matrix_divided.py
+===========================================
 
 Importing the function:
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
@@ -31,12 +33,13 @@ List of non-lists:
         ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-Invalid element inside matrix (string or boolean):
+Invalid element inside matrix:
     >>> matrix_divided([[1, "two"], [3, 4]], 2)
     Traceback (most recent call last):
         ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+Boolean element inside matrix:
     >>> matrix_divided([[1, True], [3, 4]], 2)
     Traceback (most recent call last):
         ...
