@@ -23,3 +23,15 @@ Default last_name (defaults to empty string ""):
 Testing with explicit empty last name:
     >>> say_my_name("Anna", "")
     My name is Anna 
+
+Invalid last_name type (integer):
+    >>> say_my_name("John", 12)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+Invalid first_name type (integer):
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
