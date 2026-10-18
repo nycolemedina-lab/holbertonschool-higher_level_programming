@@ -19,6 +19,10 @@ Float elements and negative divisors:
     >>> matrix_divided([[1.5, -2.5], [3.0, 4.0]], -2)
     [[-0.75, 1.25], [-1.5, -2.0]]
 
+Dividing by infinity returns all 0.0:
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 2. Matrix Type Errors
 =====================
 Not a list of lists:
@@ -71,3 +75,17 @@ Division by zero:
     Traceback (most recent call last):
         ...
     ZeroDivisionError: division by zero
+
+5. Missing Positional Arguments
+==============================
+Missing one argument:
+    >>> matrix_divided([[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Missing two arguments:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
