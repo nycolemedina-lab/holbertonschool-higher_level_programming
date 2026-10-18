@@ -9,7 +9,7 @@ Importing the function:
 =================
     >>> first_name = "Nycole"
     >>> last_name = "Medina"
-    >>> say_my_name(first_name, last_name="")
+    >>> say_my_name(first_name, last_name)
     My name is Nycole Medina
 
 Passing direct string literals:
@@ -18,4 +18,8 @@ Passing direct string literals:
 
 Default last_name (defaults to empty string ""):
     >>> say_my_name("Bob")
-    My name is Bob 
+    My name is Bob
+
+Testing with explicit empty last name:
+    >>> say_my_name("Anna", "")
+    My name is Anna
