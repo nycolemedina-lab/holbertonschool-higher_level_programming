@@ -3,6 +3,8 @@
 This module provides the matrix_divided function.
 It divides all elements of a matrix by the variable div.
 """
+
+
 def matrix_divided(matrix, div):
     """Divides all elements of a matrix by the variable div.
 
