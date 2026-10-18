@@ -9,7 +9,7 @@ Importing the function:
 =================
     >>> first_name = "Nycole"
     >>> last_name = "Medina"
-    >>> say_my_name(first_name, last_name)
+    >>> say_my_name(first_name, last_name="")
     My name is Nycole Medina
 
 Passing direct string literals:
