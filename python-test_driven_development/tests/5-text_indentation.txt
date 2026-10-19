@@ -19,9 +19,9 @@ Importing the function:
 
 Leading/trailing spaces around punctuation should be stripped:
     >>> text_indentation("  Hola, buenos dias.   Como estas?   ")
-    Lorem ipsum.
+    Hola, buenos dias.
     <BLANKLINE>
-    Dolor sit amet?
+    Como estas?
     <BLANKLINE>
 
 Text without delimiters:
