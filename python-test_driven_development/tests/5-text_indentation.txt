@@ -10,19 +10,19 @@ Importing the function:
     >>> text = "Hello world. How are you? Fine: thanks."
     >>> text_indentation(text)
     Hello world.
-
+    <BLANKLINE>
     How are you?
-
+    <BLANKLINE>
     Fine:
-
+    <BLANKLINE>
     thanks.
 
 Leading/trailing spaces around punctuation should be stripped:
     >>> text_indentation("  Lorem ipsum.   Dolor sit amet?   ")
     Lorem ipsum.
- 
+    <BLANKLINE>
     Dolor sit amet?
- 
+    <BLANKLINE>
 
 Text without delimiters:
     >>> text_indentation("No special characters here")
