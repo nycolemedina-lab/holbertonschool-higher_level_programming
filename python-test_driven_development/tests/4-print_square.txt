@@ -1,0 +1,64 @@
+===========================================
+Unit Tests for 4-print_square.py
+===========================================
+
+Importing the function:
+    >>> print_square = __import__('4-print_square').print_square
+
+1. Standard Usage
+=================
+Square of size 4:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Square of size 1:
+    >>> print_square(1)
+    #
+
+Square of size 0 (prints nothing):
+    >>> print_square(0)
+
+2. Type Errors
+==============
+Float greater than or equal to 0:
+    >>> print_square(3.14)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Float less than 0 (explicit project requirement):
+    >>> print_square(-2.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+String argument:
+    >>> print_square("4")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Boolean argument:
+    >>> print_square(True)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+3. Value Errors
+===============
+Integer less than 0:
+    >>> print_square(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+4. Missing Arguments
+====================
+Missing required positional argument:
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
