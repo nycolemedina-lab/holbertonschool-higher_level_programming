@@ -1,0 +1,54 @@
+===========================================
+Unit Tests for 5-text_indentation.py
+===========================================
+
+Importing the function:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+1. Standard Usage
+=================
+    >>> text = "Hello world. How are you? Fine: thanks."
+    >>> text_indentation(text)
+    Hello world.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    Fine:
+    <BLANKLINE>
+    thanks.
+
+Leading/trailing spaces around punctuation should be stripped:
+    >>> text_indentation("  Lorem ipsum.   Dolor sit amet?   ")
+    Lorem ipsum.
+    <BLANKLINE>
+    Dolor sit amet?
+    <BLANKLINE>
+
+Text without delimiters:
+    >>> text_indentation("No special characters here")
+    No special characters here
+
+2. Type Errors
+==============
+Non-string inputs:
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation(["Lorem", "ipsum"])
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+3. Missing Arguments
+====================
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
