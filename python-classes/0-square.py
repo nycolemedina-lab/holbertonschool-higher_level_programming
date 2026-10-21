@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
 This module provides the Square class
+
 """
 
 
 class Square:
-   """Represent a square shape
+    """Represent a square shape
 
     """
 
