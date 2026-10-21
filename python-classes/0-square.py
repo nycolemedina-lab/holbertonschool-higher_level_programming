@@ -11,7 +11,7 @@ class Square:
     """
 
     def __init__(self):
-    """Initialize a new square
+        """Initialize a new square
 
-    """
+        """
         pass
