@@ -5,7 +5,7 @@ this module provides the square class
 """
 
 
-class Square
+class Square:
     """Represent a square shape
 
     """
