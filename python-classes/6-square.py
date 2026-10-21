@@ -23,7 +23,7 @@ class Square:
 
         self.__size = size
 
-        if not isinstance(position, tuple) or
+        if (not isinstance(position, tuple) or
                 len(position) != 2 or
                 not all (isintance(i, int) for i in position) or
                 not all (i >= 0 for i in position)):
