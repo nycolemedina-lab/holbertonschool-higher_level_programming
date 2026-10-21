@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 this module provides the square class
-
 """
 
 
@@ -40,7 +39,6 @@ class Square:
             raise ValueError("size must be >= 0")
 
         self.__size = value
-
 
     def area(self):
         """calculate the area of the square
