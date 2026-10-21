@@ -24,11 +24,13 @@ class Square:
 
         self.__size = size
 
+    @property
     def size(self):
         """return the current value of size
         """
         return self.__size
 
+    @size.setter
     def size(self, value):
         """setter for size
         """
