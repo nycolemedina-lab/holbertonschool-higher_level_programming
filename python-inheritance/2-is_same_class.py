@@ -15,4 +15,4 @@ def is_same_class(obj, a_class):
         True: if the object is from the class
         False: if the object is not from the class 
     """
-    return type(obj) is _class
+    return type(obj) is a_class
