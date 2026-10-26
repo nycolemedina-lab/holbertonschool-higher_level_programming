@@ -58,7 +58,7 @@ Testing non-integer types (must raise TypeError):
 
 Testing boolean values (must raise TypeError because type(bool) is not int):
     >>> bg.integer_validator("is_active", True)
-    Traceback (most example call last):
+    Traceback (most recent call last):
         ...
     TypeError: is_active must be an integer
 
