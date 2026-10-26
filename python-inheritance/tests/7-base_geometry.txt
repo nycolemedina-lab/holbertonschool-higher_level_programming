@@ -56,6 +56,24 @@ Testing non-integer types (must raise TypeError):
         ...
     TypeError: set must be an integer
 
+Testing with no arguments passed:
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Testing with only 1 argument passed:
+    >>> bg.integer_validator("width")
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Testing with more than 2 arguments passed:
+    >>> bg.integer_validator("width", 10, 20)
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
 Testing boolean values (must raise TypeError because type(bool) is not int):
     >>> bg.integer_validator("is_active", True)
     Traceback (most recent call last):
