@@ -1,5 +1,5 @@
 Importing the calss:
-    >>> MyList = __import__('1_my_list').MyList
+    >>> MyList = __import__('1-my_list').MyList
 
 Testing instantiation and basic list operations:
     >>> my_list = MyList()
