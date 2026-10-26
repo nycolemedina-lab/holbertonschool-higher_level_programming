@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module defines the function is_same_class the returns true if an object is
-part of a class or flase is it is not.
+an instance of a class or flase otherwise.
 """
 
 
@@ -15,7 +15,4 @@ def is_same_class(obj, a_class):
         True: if the object is from the class
         False: if the object is not from the class 
     """
-    if isinstance(obj, a_class):
-        return True
-    if not isinstance(obj, a_class):
-        return False
+    return type(obj) is _class
