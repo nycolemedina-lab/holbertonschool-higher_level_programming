@@ -1,0 +1,39 @@
+Importing the calss:
+	>>> MyList = __import__('1_my_list').MyList
+
+Testing instantiation and basic list operations:
+    >>> my_list = MyList()
+    >>> isinstance(my_list, list)
+    True
+    >>> print(my_list)
+    []
+
+Testing print_sorted with an unsorted list of integers:
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Verifying the original list remains unchanged after print_sorted:
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+Testing with negative numbers:
+    >>> my_list2 = MyList([3, -1, 0, -10, 5])
+    >>> my_list2.print_sorted()
+    [-10, -1, 0, 3, 5]
+
+Testing with an empty list:
+    >>> empty_list = MyList()
+    >>> empty_list.print_sorted()
+    []
+
+Testing with all identical elements:
+    >>> same_elements = MyList([2, 2, 2])
+    >>> same_elements.print_sorted()
+    [2, 2, 2]
