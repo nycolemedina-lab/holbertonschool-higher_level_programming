@@ -6,13 +6,16 @@ This module defines a class BaseGeometry
 
 class BaseGeometry:
     """A class representing BaseGeometry with area and validation logic."""
-    def area(self):
-        """fuction not yet implemented"""
 
+    def area(self):
+        """Calculate the area
+        Raises:
+            Exception: Indicates area() is not implemented yet
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """chacke if value is an integer and its grater than 0
+        """Validate that value is an integer and its grater than 0
         Args:
             name: the name of the value
             value: the parameter value to validate
