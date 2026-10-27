@@ -4,6 +4,7 @@ This module defines an abstract base class 'Shape'
 with concrete subclasses 'Circle' and 'Rectangle'.
 """
 from abc import ABC, abstractmethod
+import math
 
 
 class Shape(ABC):
@@ -28,11 +29,11 @@ class Circle(Shape):
 
     def area(self):
         """Calculates the area of the circle."""
-        return 3.1415 * (self.__radius ** 2)
+        return math.pi * (self.__radius ** 2)
 
     def perimeter(self):
         """Calculates the perimeter of the circle."""
-        return 2 * 3.1415 * self.__radius
+        return 2 * math.pi * self.__radius
 
 class Rectangle(Shape):
     """Rectangle class inheriting from Shape."""
