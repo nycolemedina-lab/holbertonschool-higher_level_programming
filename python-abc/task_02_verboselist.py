@@ -30,3 +30,25 @@ class VerboseList(list)
         items = self[index]
         print(f"popped [{item}] from the list.")
         return super().pop(index)
+
+# --- Testing ---
+if __name__ == "__main__":
+    vlist = VerboseList()
+
+    # Test append
+    vlist.append(10)
+    vlist.append(20)
+
+    # Test extend
+    vlist.extend([30, 40, 50])
+
+    # Test remove
+    vlist.remove(20)
+
+    # Test pop (default index -1)
+    vlist.pop()
+
+    # Test pop with explicit index
+    vlist.pop(0)
+
+    print("Final List:", vlist)
