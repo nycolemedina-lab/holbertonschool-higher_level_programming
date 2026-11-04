@@ -11,6 +11,6 @@ def read_file(filename=""):
     Args:
         filename: file to read and print
     """
-    with open("filename") as f:
+    with open(filename) as f:
         for line in f:
             print(line, end="")
