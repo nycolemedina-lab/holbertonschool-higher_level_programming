@@ -8,6 +8,7 @@ import pickle
 
 class CustomObject:
     """Represent a custom object with serialization capabilities."""
+
     def __init__(self, name, age, is_student):
         """Initialize a new CustomObject instance.
 
@@ -16,12 +17,12 @@ class CustomObject:
             age (int): Age of the object owner.
             is_student (bool): Student status.
         """
-    self.name = name
-    self.age = age
-    self.is_student = is_student
+        self.name = name
+        self.age = age
+        self.is_student = is_student
 
     def display(self):
-        """prints out thr object's attributes"""
+        """prints out the object's attributes"""
         print(f"Name: {self.name}\nAge: {self.age}\nIs Student: {self.is_student}")
 
     def serialize(self, filename):
