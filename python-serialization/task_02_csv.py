@@ -20,7 +20,9 @@ import json
 
             with open("data.json", "w", encoding="utf-8") as jf:
                 json.dump(data, jf, indent=4)
+
             return True
 
         except Excption:
+
             return False
