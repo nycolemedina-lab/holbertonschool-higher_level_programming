@@ -23,6 +23,6 @@ def convert_csv_to_json(csvfile):
 
         return True
 
-    except Excption:
+    except Exception:
 
         return False
