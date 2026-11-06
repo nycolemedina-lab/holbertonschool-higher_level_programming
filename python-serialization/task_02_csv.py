@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-
+This module provides a function to convert CSV file contents
+into a JSON file format using DictReader.
 """
 import csv
 import json
