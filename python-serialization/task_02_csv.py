@@ -14,7 +14,7 @@ import json
         Returns:
             bool: True if conversion succeeds, Fales otherwise.
         """
-        if csvfile:
+        try:
             with open(csvfile, "r", encoding="utf-8") as csvf:
                 data = list(csv.DictReader(csvf))
 
@@ -22,4 +22,5 @@ import json
                 json.dump(data, jf, indent=4)
             return True
 
-        return False
+        except Excption:
+            return False
