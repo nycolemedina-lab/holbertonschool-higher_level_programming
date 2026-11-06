@@ -11,8 +11,12 @@ import json
         Args:
             csvfile: csv file to convert to json.
         """
-        with open(csvfile, "r") as csvf:
-            data = list(csv.DictReader(csvf))
+        if csvfile:
+            with open(csvfile, "r", encoding="utf-8") as csvf:
+                data = list(csv.DictReader(csvf))
 
-        with open('data.json', "w") as jf:
-            json.dump(data, jf)
+            with open('data.json', "w", encoding="utf-8") as jf:
+                json.dump(data, jf)
+            return True
+
+        return False
