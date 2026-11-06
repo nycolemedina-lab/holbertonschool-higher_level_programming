@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module defines the CustomObject class with pickle-based
-serialization and deserialization methods.
+This module defines the CustomObject class with
+pickle-based serialization and deserialization methods.
 """
 import pickle
 
