@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 This module defines the class "Student" with basic attributes
-and a method to retrieve its dictionary representation for JSON serialization.
+and a method to retrieve its dictionary representation
+for JSON serialization.
 """
 
 
@@ -23,9 +24,10 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a Student instance.
         If attrs is a list of strings, only attribute names contained
-        in this list are retrieved. Otherwise, all attributes are retrieved.
+        in this list are retrieved.
         """
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
+        if isinstance(attrs, list) and
+                all(isinstance(item, str) for item in attrs):
             res = {}
             for k in attrs:
                 if k in self.__dict__:
