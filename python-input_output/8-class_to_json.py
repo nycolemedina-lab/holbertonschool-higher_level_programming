@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module defines the function "class_to_json" that
-returns the dictionary representation of a class instance for JSON serialization.
+This module defines the function "class_to_json" that returns the
+dictionary representation of a class instance for JSON serialization.
 """
 
 
