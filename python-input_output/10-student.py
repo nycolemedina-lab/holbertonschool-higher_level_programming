@@ -26,7 +26,8 @@ class Student:
         If attrs is a list of strings, only attribute names contained
         in this list are retrieved.
         """
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
+        if (isinstance(attrs, list) and
+                all(isinstance(k, str) for k in attrs)):
             res = {}
             for k in attrs:
                 if k in self.__dict__:
