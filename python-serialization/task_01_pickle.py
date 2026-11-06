@@ -7,7 +7,8 @@ import pickle
 
 
 class CustomObject:
-    """Represent a custom object with serialization capabilities."""
+    """Represent a custom object with serialization
+    capabilities."""
 
     def __init__(self, name, age, is_student):
         """Initialize a new CustomObject instance.
