@@ -7,14 +7,14 @@ import requests
 import csv
 import json
 
-def fetch_and_print_posts()
+def fetch_and_print_posts():
     """func"""
     r = requests.get("https://jsonplaceholder.typicode.com")
     r.status_code
     r.json()
     print("tiles")
 
-def fetch_and_save_posts()
+def fetch_and_save_posts():
     """func"""
     data = requests.get("https://jsonplaceholder.typicode.com")
     data_list = ["id": "id_v", "title": "titles_v", "body": "body_v"]
